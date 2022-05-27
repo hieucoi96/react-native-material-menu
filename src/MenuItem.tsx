@@ -5,7 +5,6 @@ import {
   Pressable,
   PressableProps,
   StyleSheet,
-  Text,
   TextStyle,
   View,
   ViewStyle,

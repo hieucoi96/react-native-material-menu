@@ -6,7 +6,7 @@ export interface MenuDividerProps {
   color?: string;
 }
 
-export function MenuDivider({ color = 'rgba(0,0,0,0.12)' }: MenuDividerProps) {
+export function MenuDivider() {
   return <View style={[styles.divider, { borderBottomColor: '#E6E6E6' }]} />;
 }
 

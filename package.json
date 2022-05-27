@@ -18,7 +18,8 @@
   "author": "Maksim Milyutin <mmxckk@gmail.com> (https://github.com/mxck)",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "rm -rf built && tsc",
+    "prepare": "rm -rf built && tsc",
     "prepublishOnly": "npm run build",
     "prettify": "prettier --write 'src/**/*.(js|tsx|ts)' && eslint 'src/**/*.{js,ts,tsx}'"
   },
