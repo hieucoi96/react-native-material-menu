@@ -7,12 +7,13 @@ export interface MenuDividerProps {
 }
 
 export function MenuDivider({ color = 'rgba(0,0,0,0.12)' }: MenuDividerProps) {
-  return <View style={[styles.divider, { borderBottomColor: color }]} />;
+  return <View style={[styles.divider, { borderBottomColor: '#E6E6E6' }]} />;
 }
 
 const styles = StyleSheet.create({
   divider: {
     flex: 1,
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: 1,
+    marginHorizontal: 16,
   },
 });
